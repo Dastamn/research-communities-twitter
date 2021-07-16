@@ -1,0 +1,36 @@
+button {
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  height: 30px;
+  cursor: pointer;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  *:focus {
+    outline: 0;
+    outline: none;
+  }
+
+  &.danger {
+    background-color: $red;
+    color: white;
+
+    &:disabled {
+      background-color: darken($color: rgb(235, 62, 10), $amount: 10);
+      color: $gray;
+    }
+  }
+
+  &.primary {
+    background-color: $blue;
+    color: white;
+
+    &:disabled {
+      background-color: darken($color: rgb(7, 76, 206), $amount: 10);
+      color: $gray;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+    "compilerOptions": {
+      "jsx": "react",
+      "target": "es2015",
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "allowSyntheticDefaultImports": true,
+      "module": "commonjs",
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+
+
+    // "compilerOptions": {
+    //   "target": "es5",
+    //   "lib": [
+    //     "dom",
+    //     "dom.iterable",
+    //     "esnext"
+    //   ],
+    //   "allowJs": true,
+    //   "skipLibCheck": true,
+    //   "strict": true,
+    //   "forceConsistentCasingInFileNames": true,
+    //   "noEmit": true,
+    //   "esModuleInterop": true,
+    //   "module": "esnext",
+    //   "moduleResolution": "node",
+    //   "resolveJsonModule": true,
+    //   "isolatedModules": true,
+    //   "jsx": "preserve",
+    //   "baseUrl": ".",
+    //   "paths": {
+    //     "#root/*": ["./*"]
+    //   }
+    // },
+    // "include": [
+    //   "**/*.ts",
+    //   "**/*.tsx"
+    // ],
+    // "exclude": [
+    //   "node_modules"
+    // ]
+  }

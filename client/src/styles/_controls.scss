@@ -1,0 +1,72 @@
+.control-wrapper {
+  backdrop-filter: blur(15px);
+  background-color: $panel-bg;
+  border-radius: 10px;
+  // height: 500px;
+  left: 50px;
+  overflow: hidden;
+  position: absolute;
+  top: 10%;
+  transform: translateY(-10%);
+  width: 250px;
+  z-index: 2;
+
+  .control-panel {
+    height: 100%;
+    overflow-y: auto;
+    padding: 10px 12px;
+    position: relative;
+    user-select: none;
+
+    div > {
+      margin-bottom: 20px;
+    }
+
+    &::-webkit-scrollbar {
+      height: 5px;
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $lighter-dark;
+      border-radius: 7px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    & {
+      scrollbar-color: $lighter-dark transparent !important;
+      scrollbar-width: thin !important;
+    }
+
+    .control-content {
+      display: flex;
+      flex-direction: column;
+
+      .interaction {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+
+        * {
+          margin-bottom: 10px;
+        }
+
+        :last-child {
+          margin: 0;
+        }
+
+        .check {
+          cursor: pointer;
+
+          input {
+            margin-right: 5px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
